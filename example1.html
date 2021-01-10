@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+<title>check whether leap year </title>
+</head>
+<body>
+    <input type="text"  name="year" id="year"/>
+    <button onclick="getleapyear()">check</button>
+    <p id="GFG"></p>
+    <script>
+        function getleapyear(){
+            var year=document.getElementById("year").value
+            document.getElementById("GFG").innerHTML=(year %100===0) ? (year %400===0):(year %4===0);
+        }
+    </script>
+</body>
+</html>
